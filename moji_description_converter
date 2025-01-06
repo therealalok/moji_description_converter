@@ -1,0 +1,11 @@
+import demoji
+
+text_with_emoji = "🇳🇵 Nepal: Land of towering 🏔️ Himalayas, rich 🛕 culture, vibrant 🎉 festivals, diverse 🌿 wildlife, and delicious 🥟 momo!"
+print("Text with emoji: ",text_with_emoji)
+
+text_without_emojis = demoji.replace(text_with_emoji, "")
+print("Text without emojis:", text_without_emojis)
+
+
+text_with_descriptions = demoji.replace_with_desc(text_with_emoji)
+print("Text with descriptions:", text_with_descriptions)
